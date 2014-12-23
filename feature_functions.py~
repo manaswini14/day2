@@ -1,0 +1,14 @@
+'''
+feature_functions.py
+Implements the feature generation mechanism for RER
+'''
+
+from nltk import sent_tokenize, word_tokenize
+import nltk
+import json
+import numpy
+import pickle
+import datetime
+
+class FeatureFunctions(object):
+    def __init__(self, sent_list = None):
